@@ -1,4 +1,4 @@
-var BreakPromise = function (message, type) {
+function BreakPromise(message, type) {
 
     this.getType = function () {
         return type || 'info';
@@ -11,14 +11,6 @@ var BreakPromise = function (message, type) {
     this.getMessage = function () {
         return message;
     }
-};
+}
 
-module.exports = function (urls) {
-    var result;
-
-    if (!(this instanceof BreakPromise)) {
-        result = new BreakPromise(urls);
-    }
-
-    return result;
-};
+module.exports = BreakPromise;
