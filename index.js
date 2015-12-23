@@ -5,7 +5,7 @@ function BreakPromise(message, type) {
     };
 
     this.hasMessage = function () {
-        return !!message;
+        return Boolean(message);
     };
 
     this.getMessage = function () {
