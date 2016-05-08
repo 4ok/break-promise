@@ -3,7 +3,14 @@
   "name": "break-promise",
   "version": "0.0.0",
   "engines": {
-    "node": ">=0.10"
+    "node": ">=4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.9.0",
+    "eslint-config-4ok": "git://github.com/4ok/eslint-config-4ok"
+  },
+  "scripts": {
+    "lint": "node_modules/.bin/eslint ."
   },
   "private": true
 }

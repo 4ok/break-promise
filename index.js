@@ -1,16 +1,16 @@
 function BreakPromise(message, type) {
 
-    this.getType = function () {
+    this.getType = function getType() {
         return type || 'info';
     };
 
-    this.hasMessage = function () {
+    this.hasMessage = function hasMessage() {
         return Boolean(message);
     };
 
-    this.getMessage = function () {
+    this.getMessage = function getMessage() {
         return message;
-    }
+    };
 }
 
 module.exports = BreakPromise;
